@@ -23,7 +23,7 @@ hist(steps.date$steps, main = "Histogram of Total Number of Steps Taken Each Day
      xlab = "Total Number of Steps", col = "red", breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](figure/hist1.png) 
 
 ```r
 # Calculate the mean and median number of steps taken per day
@@ -55,7 +55,7 @@ plot(steps ~ interval, data = steps.intv, type = "l",
      xlab = "5-minute Intervals", ylab = "Average Number of Steps Taken")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![](figure/plot2.png) 
 
 ```r
 # Find the 5-minute interval that contains the maximum number of steps
@@ -96,7 +96,7 @@ hist(steps.date.filled$steps, main = "New Histogram of Total Number of Steps Tak
      xlab = "Total Number of Steps", col = "orange", breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](figure/hist3.png) 
 
 ```r
 # Calculate the mean and median number of steps taken per day
@@ -137,6 +137,6 @@ xyplot(steps.mean.filled$means ~ steps.mean.filled$interval | steps.mean.filled$
        layout = c(1, 2), type = "l", xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](figure/plot4.png) 
 
 The plot shows that there are differences in activity patterns between weekdays and weekends. The distribution of activity is more uniformly distributed throughout the day on weekends. On weekdays, there appears to be a spike of activity in the morning, and less activity for the rest of the day.
